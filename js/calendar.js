@@ -45,8 +45,10 @@ function makeCalendar(pYear, pMonth) {
   }
   //윤년 탐색 알고리즘 끝
 
-  for(let i=0;i<49;i++){
-      if
+  for (let i = 0; i < 49; i++) {
+    if (i < firstDay.getDay()) {
+      output += `<li class="blank"><span></span>`;
+    }
   }
 }
 
