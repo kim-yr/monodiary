@@ -1,0 +1,26 @@
+@import "mixins";
+@import "vars";
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+body {
+  background-color: #eee;
+  font-family: "Roboto Mono", "Noto Sans KR", monospace;
+}
+#wrap {
+  width: 1480px;
+  margin: auto;
+  .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #fff;
+    // display: flex;
+    @include flexCenter();
+  }
+}

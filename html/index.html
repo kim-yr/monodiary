@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <script src="../js/gsap/gsap.min.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/calendar.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1><span class="main">MY DIARY</span></h1>
+
+      <div class="date"></div>
+
+      <div class="dayPlan">
+        <button class="addBtn btns"><span class="material-icons"> add_box </span></button>
+        <button class="setBtn btns"><span class="material-icons"> settings_applications </span></button>
+      </div>
+
+      <div class="weekPlan"></div>
+
+      <div class="calendar">
+        <div class="header">
+          <button class="btnPrev btns"><span class="material-icons"> arrow_back_ios </span></button>
+          <div class="title calTitle">
+            <span class="year">2021</span>
+            <span class="month">12</span>
+          </div>
+          <button class="btnNext btns"><span class="material-icons"> arrow_forward_ios </span></button>
+        </div>
+        <div class="days">
+          <ul>
+            <li class="sun"><span>SUN</span></li>
+            <li><span>MON</span></li>
+            <li><span>TUE</span></li>
+            <li><span>WED</span></li>
+            <li><span>THU</span></li>
+            <li><span>FRI</span></li>
+            <li class="sat"><span>SAT</span></li>
+          </ul>
+        </div>
+        <div class="dates">
+          <ul></ul>
+        </div>
+      </div>
+
+      <div class="linePaper">
+        <h2><span class="title diaryTitle">DIARY.</span></h2>
+        <button class="rockBtn btns"><span class="material-icons"> lock </span></button>
+        <button class="deleteBtn btns"><span class="material-icons"> delete </span></button>
+      </div>
+
+      <div class="squarPaper">
+        <h2><span class="title memoTitle">MEMO.</span></h2>
+        <button class="deleteBtn btns"><span class="material-icons"> delete </span></button>
+      </div>
+    </div>
+  </body>
+</html>
